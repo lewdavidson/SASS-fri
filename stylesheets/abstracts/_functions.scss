@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+
+$colors: (
+"white": $white,
+"black": $black,
+"blue": $blue,
+"peach": $peach,
+"red": $red,
+"ltblue": $lightblue,
+"yellow": $yellow,
+);
+
+@each $color, $hex in $colors {
+  .bg-#{$color} {
+    background-color: $hex;
+  }
+}
