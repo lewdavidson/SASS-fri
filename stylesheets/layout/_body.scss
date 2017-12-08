@@ -1,0 +1,44 @@
+.box {
+  @include mobile {
+    @include grid(1, 2%);
+    padding: 10px;
+  }
+}
+
+.header, .middle, .bottom-content {
+  width: 100%;
+  & .box {
+    height: 300px;
+  }
+}
+.header, .bottom-content {
+  & .box-img{
+    @include topper;
+    height: 60%
+  }
+  & .box-text, {
+    height: 40%;
+  }
+}
+
+.middle {
+  
+}
+
+
+
+#matty {
+  background-image: url('../img/matty.jpeg');
+}
+
+#chz {
+  background-image: url('../img/chz.jpeg');
+}
+
+#bacon {
+  background-image: url('../img/bacon.jpeg');
+}
+
+#renee {
+  background-image: url('../img/renee.jpeg');
+}
