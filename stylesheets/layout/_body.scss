@@ -38,4 +38,13 @@ a {
   & .box-img {
     @include topper;
   }
+  @include tablet {
+    @include grid(2, 2%);
+  }
+}
+
+.photo-box {
+  @include mobile {
+    @include grid(1, 2%);
+  }
 }

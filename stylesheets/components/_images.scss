@@ -17,10 +17,12 @@
   background-image: url('../img/bacon.jpeg');
   @include mobile {
     margin-top: 15px;
-    margin-bottom: 15px;
   }
 }
 
 #renee {
   background-image: url('../img/renee.jpeg');
+  @include mobile {
+      margin-top: 3%;
+  }
 }

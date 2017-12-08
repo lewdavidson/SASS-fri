@@ -20,6 +20,8 @@
   background-color: #E1D89F; }
 
 *, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
@@ -28,22 +30,20 @@
     display: block;
     clear: both; }
 
-.container {
-  height: 100%;
+.container, html, body {
+  height: 100%; }
+
+.container, .footer, body, html .bottom-content, .middle, .header {
   width: 100%; }
-  .container:after {
+  .container:after, .footer:after, body:after, html .bottom-content:after, .middle:after, .header:after {
     content: "";
     display: block;
     clear: both; }
 
-.footer {
-  height: 30px;
-  width: 100%; }
-
 .nav {
   width: 100%;
-  height: 35px;
-  margin-bottom: 20px; }
+  height: 45px;
+  margin-bottom: 30px; }
   .nav p {
     float: left;
     font-size: 30px;
@@ -57,12 +57,13 @@
     .nav li {
       display: none; }
     .nav p {
+      margin-top: 4px;
       margin-left: 5%; }
     .nav #burger {
       float: right;
       width: 33px;
       height: 30px;
-      margin: 2px; } }
+      margin: 6px; } }
 
 body:after {
   content: "";
@@ -106,6 +107,23 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .mid-box {
+      float: left;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      width: 49%; }
+      .mid-box:nth-child(2n) {
+        margin-right: 0; } }
+
+@media (max-width: 767px) {
+  .photo-box {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 100%; }
+    .photo-box:nth-child(1n) {
+      margin-right: 0; } }
 
 .foot-nav {
   height: 100%;
@@ -115,7 +133,9 @@ a {
   .foot-nav ul {
     float: right; }
   .foot-nav li {
-    display: inline; }
+    display: inline;
+    font-size: 12px;
+    margin-right: 2px; }
   .foot-nav p {
     display: inline; }
 
@@ -146,10 +166,12 @@ a {
   background-image: url("../img/bacon.jpeg"); }
   @media (max-width: 767px) {
     #bacon {
-      margin-top: 15px;
-      margin-bottom: 15px; } }
+      margin-top: 15px; } }
 
 #renee {
   background-image: url("../img/renee.jpeg"); }
+  @media (max-width: 767px) {
+    #renee {
+      margin-top: 3%; } }
 
 /*# sourceMappingURL=main.css.map */

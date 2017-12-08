@@ -3,18 +3,22 @@
 // -----------------------------------------------------------------------------
 
 *, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   @include marginreset;
   @include clearFix;
 }
 
-.container {
+.container, html , body {
   height: 100%;
+}
+
+.container, .footer, body, html .bottom-content, .middle, .header {
   width: 100%;
   @include clearFix;
 }
 
-.footer {
-  height: 30px;
-  width: 100%;
-}
+// .footer {
+//   height: 30px;
+// }
