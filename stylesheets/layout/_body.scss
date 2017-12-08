@@ -1,44 +1,41 @@
+body {
+  @include clearFix;
+}
+
+a {
+  text-decoration: none;
+  color: darken($peach, 20%);
+}
+
 .box {
+  width: 100%;
   @include mobile {
     @include grid(1, 2%);
     padding: 10px;
+    height: 350px;
+    & .box-text, {
+      height: 40%;
+      background-color: $yellow;
+    }
+    & h2 {
+      padding-top: 2%;
+      text-align: center;
+      color: $red;
+      font-family: 'Roboto', sans-serif;
+    }
+    & p {
+      padding: 10px;
+      color: $blue;
+      font-size: 13px;
+      line-height: 17px;
+      text-align: center;
+    }
   }
 }
 
-.header, .middle, .bottom-content {
-  width: 100%;
-  & .box {
-    height: 300px;
-  }
-}
-.header, .bottom-content {
-  & .box-img{
+.mid-box {
+  height: 200px;
+  & .box-img {
     @include topper;
-    height: 60%
   }
-  & .box-text, {
-    height: 40%;
-  }
-}
-
-.middle {
-  
-}
-
-
-
-#matty {
-  background-image: url('../img/matty.jpeg');
-}
-
-#chz {
-  background-image: url('../img/chz.jpeg');
-}
-
-#bacon {
-  background-image: url('../img/bacon.jpeg');
-}
-
-#renee {
-  background-image: url('../img/renee.jpeg');
 }

@@ -3,6 +3,11 @@
 // -----------------------------------------------------------------------------
 
 *, *::before, *::after {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   @include marginreset;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
 }

@@ -1,3 +1,26 @@
-* {
-  
+.box-img {
+  border-radius: 5px;
+  height: 60%;
+  @include topper;
+}
+
+#matty {
+  background-image: url('../img/matty.jpeg');
+}
+
+#chz {
+  background-image: url('../img/chz.jpeg');
+  margin-bottom: 15px;
+}
+
+#bacon {
+  background-image: url('../img/bacon.jpeg');
+  @include mobile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+#renee {
+  background-image: url('../img/renee.jpeg');
 }
