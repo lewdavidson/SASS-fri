@@ -9,27 +9,25 @@ a {
 
 .box {
   width: 100%;
-  @include mobile {
-    @include grid(1, 2%);
+  @include grid(1, 2%);
+  padding: 10px;
+  height: 350px;
+  & .box-text, {
+    height: 40%;
+    background-color: $yellow;
+  }
+  & h2 {
+    padding-top: 2%;
+    text-align: center;
+    color: $red;
+    font-family: 'Roboto', sans-serif;
+  }
+  & p {
     padding: 10px;
-    height: 350px;
-    & .box-text, {
-      height: 40%;
-      background-color: $yellow;
-    }
-    & h2 {
-      padding-top: 2%;
-      text-align: center;
-      color: $red;
-      font-family: 'Roboto', sans-serif;
-    }
-    & p {
-      padding: 10px;
-      color: $blue;
-      font-size: 13px;
-      line-height: 17px;
-      text-align: center;
-    }
+    color: $blue;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
   }
 }
 
@@ -39,12 +37,6 @@ a {
     @include topper;
   }
   @include tablet {
-    @include grid(2, 2%);
-  }
-}
-
-.photo-box {
-  @include mobile {
-    @include grid(1, 2%);
+    @include grid(2, 1%);
   }
 }

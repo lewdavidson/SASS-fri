@@ -18,3 +18,10 @@
     display: inline;
   }
 }
+
+.footer {
+  height: 30px;
+  // @include tablet {
+  //   margin-top: 55px;
+  // }
+}
