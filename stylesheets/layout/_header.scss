@@ -28,13 +28,30 @@
   @include mobile {
     margin-bottom: 30px;
     li {
-      display: none;
+      float: none;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid $white;
+      }
+    & ul {
+      overflow: hidden;
+      background-color: lighten($red, 20%);
+      height: 0;
+    } & #nav-list.open {
+      height: 123px;
+      width: 521px;
     }
     #burger {
       float: right;
       width: 33px;
       height: 30px;
       margin: 6px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

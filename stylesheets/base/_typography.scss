@@ -9,12 +9,18 @@
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: white;
+    &:hover {
+      color: darken($lightblue, 20%);
+    }
   }
 }
 
 a {
   text-decoration: none;
   color: darken($peach, 20%);
+  &:hover {
+    color: darken($red, 20%);
+  }
 }
 
 .box {
@@ -39,6 +45,24 @@ a {
 
 .mid-box {
   @include tablet {
-  
+    & h2 {
+      padding-top: 15px;
+      font-size: 20px;
+      text-align: center;
+      color: $red;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+
+.foot-nav{
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-size: 12px;
+  & li:hover {
+    color: darken($lightblue, 20%);
+  }
+  @include tablet {
+    font-size: 24px;
   }
 }

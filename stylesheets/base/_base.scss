@@ -18,3 +18,26 @@
   width: 100%;
   @include clearFix;
 }
+
+body {
+  background-color: $lightblue;
+}
+
+
+.header {
+  @include tablet {
+    height: 30%;
+  }
+}
+
+.middle {
+  @include tablet {
+    height: 35%;
+  }
+}
+
+.bottom-content {
+  @include tablet {
+    height: 35%;
+  }
+}

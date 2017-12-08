@@ -1,24 +1,3 @@
-body {
-  @include clearFix;
-}
-
-.header {
-  @include tablet {
-    height: 30%;
-  }
-}
-
-.middle {
-  @include tablet {
-    height: 35%;
-  }
-}
-
-.bottom-content {
-  @include tablet {
-    height: 35%;
-  }
-}
 
 .box {
   width: 100%;
@@ -29,6 +8,7 @@ body {
     background-color: $yellow;
   }
   & .box-img {
+    @include topper;
     height: 189px;
   }
   & p {
@@ -48,23 +28,28 @@ body {
     margin-bottom: 0;
     & .box-text {
       height: 37%;
-      background-color: $yellow;
     }
     & h2 {
       font-size: 20px;
+    }
+    & a {
+      display: block;
+      margin-top: 8px;
     }
   }
 }
 
 .mid-box {
   height: 100%;
-  & .box-img {
-    @include topper;
+  @include mobile {
+    h2 {
+      display: none;
+    }
   }
   @include tablet {
     @include grid(2, 1%);
      & p {
-       padding: 24px;
+       padding: 14px;
      }
   }
 }
