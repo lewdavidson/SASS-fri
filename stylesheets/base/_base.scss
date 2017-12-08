@@ -5,9 +5,16 @@
 *, *::before, *::after {
   box-sizing: border-box;
   @include marginreset;
+  @include clearFix;
 }
 
 .container {
   height: 100%;
+  width: 100%;
+  @include clearFix;
+}
+
+.footer {
+  height: 30px;
   width: 100%;
 }
