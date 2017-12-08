@@ -6,8 +6,39 @@
     letter-spacing: 2px;
   }
   & li {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: white;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: darken($peach, 20%);
+}
+
+.box {
+  & p {
+    font-family: 'Open Sans', sans-serif;
+    color: $blue;
+    font-size: 13px;
+    line-height: 17px;
+    @include tablet {
+      font-size: 17px;
+    }
+  }
+}
+
+.photo-box {
+  & h2 {
+  text-align: center;
+  color: $red;
+  font-family: 'Roboto', sans-serif;
+  }
+}
+
+.mid-box {
+  @include tablet {
+  
   }
 }

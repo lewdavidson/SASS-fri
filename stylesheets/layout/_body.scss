@@ -2,41 +2,69 @@ body {
   @include clearFix;
 }
 
-a {
-  text-decoration: none;
-  color: darken($peach, 20%);
+.header {
+  @include tablet {
+    height: 30%;
+  }
+}
+
+.middle {
+  @include tablet {
+    height: 35%;
+  }
+}
+
+.bottom-content {
+  @include tablet {
+    height: 35%;
+  }
 }
 
 .box {
   width: 100%;
   @include grid(1, 2%);
   padding: 10px;
-  height: 350px;
   & .box-text, {
     height: 40%;
     background-color: $yellow;
   }
-  & h2 {
-    padding-top: 2%;
-    text-align: center;
-    color: $red;
-    font-family: 'Roboto', sans-serif;
+  & .box-img {
+    height: 189px;
   }
   & p {
     padding: 10px;
-    color: $blue;
-    font-size: 13px;
-    line-height: 17px;
     text-align: center;
   }
 }
 
+.photo-box {
+  @include grid(1, 2%);
+  & h2 {
+    padding-top: 2%;
+  }
+  @include tablet {
+    height: 100%;
+    padding: 0 17px 0 17px;
+    margin-bottom: 0;
+    & .box-text {
+      height: 37%;
+      background-color: $yellow;
+    }
+    & h2 {
+      font-size: 20px;
+    }
+  }
+}
+
 .mid-box {
-  height: 200px;
+  height: 100%;
   & .box-img {
     @include topper;
   }
   @include tablet {
     @include grid(2, 1%);
+     & p {
+       padding: 24px;
+     }
   }
 }

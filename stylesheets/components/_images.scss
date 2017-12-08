@@ -7,6 +7,7 @@
 
 #matty {
   background-image: url('../img/matty.jpeg');
+  background-position: center;
 }
 
 #chz {
@@ -16,14 +17,13 @@
 
 #bacon {
   background-image: url('../img/bacon.jpeg');
-  @include mobile {
     margin-top: 15px;
-  }
 }
 
 #renee {
   background-image: url('../img/renee.jpeg');
+  overflow: hidden;
   @include mobile {
-      margin-top: 3%;
+    margin-top: 3%;
   }
 }
