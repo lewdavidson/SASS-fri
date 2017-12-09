@@ -171,6 +171,7 @@ a {
     text-align: center; }
 
 .photo-box {
+  position: relative;
   float: left;
   margin-right: 2%;
   margin-bottom: 2%;
@@ -178,21 +179,24 @@ a {
   .photo-box:nth-child(1n) {
     margin-right: 0; }
   .photo-box h2 {
-    padding-top: 2%; }
+    padding-top: 2%;
+    border-bottom: solid 1px #D90429; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .photo-box {
       height: 100%;
       padding: 0 17px 0 17px;
       margin-bottom: 0; }
       .photo-box .box-text {
-        height: 37%; }
+        height: 40%; }
       .photo-box h2 {
-        font-size: 20px; }
+        font-size: 20px;
+        padding-bottom: 1%; }
       .photo-box a {
         display: block;
-        margin-top: 8px; } }
+        margin-top: 3%; } }
 
 .mid-box {
+  position: relative;
   height: 100%; }
   @media (max-width: 767px) {
     .mid-box h2 {
@@ -205,8 +209,11 @@ a {
       width: 49.5%; }
       .mid-box:nth-child(2n) {
         margin-right: 0; }
+      .mid-box h2 {
+        padding-bottom: 2%;
+        border-bottom: solid 1px #D90429; }
       .mid-box p {
-        padding: 14px; } }
+        padding: 20px; } }
 
 .foot-nav {
   height: 100%;

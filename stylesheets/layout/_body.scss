@@ -18,28 +18,32 @@
 }
 
 .photo-box {
+  position: relative;
   @include grid(1, 2%);
   & h2 {
     padding-top: 2%;
+    border-bottom: solid 1px $red;
   }
   @include tablet {
     height: 100%;
     padding: 0 17px 0 17px;
     margin-bottom: 0;
     & .box-text {
-      height: 37%;
+      height: 40%;
     }
     & h2 {
       font-size: 20px;
+      padding-bottom: 1%;
     }
     & a {
       display: block;
-      margin-top: 8px;
+      margin-top: 3%;
     }
   }
 }
 
 .mid-box {
+  position: relative;
   height: 100%;
   @include mobile {
     h2 {
@@ -48,8 +52,12 @@
   }
   @include tablet {
     @include grid(2, 1%);
+    & h2 {
+      padding-bottom: 2%;
+      border-bottom: solid 1px $red;
+    }
      & p {
-       padding: 14px;
+       padding: 20px;
      }
   }
 }
